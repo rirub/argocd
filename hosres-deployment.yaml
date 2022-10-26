@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hosres
+  name: hosres
+  namespace: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hosres
+  template:
+    metadata:
+      labels:
+        app: hosres
+    spec:
+      containers:
+      - image: fudgnl2/hosres:0.0.1
+        name: hosres
+        ports:
+        - containerPort: 3000
+          name: hosres

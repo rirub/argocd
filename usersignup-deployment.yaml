@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: usersignup
+  name: usersignup
+  namespace: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: usersignup
+  template:
+    metadata:
+      labels:
+        app: usersignup
+    spec:
+      containers:
+      - image: fudgnl2/usersign:0.0.7
+        name: usersignup
+        ports:
+        - containerPort: 3000
+          name: usersignup

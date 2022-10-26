@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hoslog
+  name: hoslog
+  namespace: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hoslog
+  template:
+    metadata:
+      labels:
+        app: hoslog
+    spec:
+      containers:
+      - image: fudgnl2/hoslogin:0.0.1
+        name: hoslog
+        ports:
+        - containerPort: 3000
+          name: hoslog
