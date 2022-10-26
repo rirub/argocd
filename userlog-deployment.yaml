@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: userlog
+  name: userlog
+  namespace: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: userlog
+  template:
+    metadata:
+      labels:
+        app: userlog
+    spec:
+      containers:
+      - image: fudgnl2/userlog:0.0.7
+        name: userlog
+        ports:
+        - containerPort: 3000
+          name: userlog
