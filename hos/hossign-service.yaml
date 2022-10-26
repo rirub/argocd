@@ -14,4 +14,3 @@ spec:
     nodePort: 31004
   selector:
     app: hossign
-~

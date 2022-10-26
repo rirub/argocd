@@ -2,16 +2,15 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: hossign
-  name: hossign
+    app: hosres
+  name: hosres
   namespace: test
 spec:
   type: NodePort
   ports:
-  - name: 'hossign-service'
+  - name: 'hosres-service'
     port: 80
     targetPort: 3000
-    nodePort: 31004
+    nodePort: 31006
   selector:
-    app: hossign
-~
+    app: hosres
