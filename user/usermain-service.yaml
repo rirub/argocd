@@ -14,4 +14,3 @@ spec:
     nodePort: 30005
   selector:
     app: usermain
-
