@@ -6,11 +6,10 @@ metadata:
   name: hosres
   namespace: test
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - name: 'hosres-service'
     port: 80
     targetPort: 3000
-    nodePort: 31006
   selector:
     app: hosres
