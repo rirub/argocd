@@ -16,7 +16,7 @@ spec:
         app: hosres
     spec:
       containers:
-      - image: fudgnl2/hosres:0.0.1
+      - image: fudgnl2/hosres:0.0.10
         name: hosres
         ports:
         - containerPort: 3000
