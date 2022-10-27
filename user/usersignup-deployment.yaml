@@ -16,7 +16,7 @@ spec:
         app: usersignup
     spec:
       containers:
-      - image: fudgnl2/usersign:0.0.7
+      - image: fudgnl2/usersign:0.0.10
         name: usersignup
         ports:
         - containerPort: 3000
