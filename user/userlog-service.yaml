@@ -6,11 +6,10 @@ metadata:
   name: userlog
   namespace: test
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - name: 'userlog-service'
     port: 80
     targetPort: 3000
-    nodePort: 30003
   selector:
     app: userlog

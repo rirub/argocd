@@ -6,11 +6,10 @@ metadata:
   name: usersignup
   namespace: test
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - name: 'usersignup-service'
     port: 80
     targetPort: 3000
-    nodePort: 30004
   selector:
     app: usersignup

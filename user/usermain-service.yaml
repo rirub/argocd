@@ -6,11 +6,10 @@ metadata:
   name: usermain
   namespace: test
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - name: 'usermain-service'
     port: 80
     targetPort: 3000
-    nodePort: 30005
   selector:
     app: usermain
