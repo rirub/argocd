@@ -16,7 +16,7 @@ spec:
         app: hoslog
     spec:
       containers:
-      - image: fudgnl2/hoslogin:0.0.10
+      - image: fudgnl2/hoslog:0.0.10
         name: hoslog
         ports:
         - containerPort: 3000
