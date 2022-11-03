@@ -16,7 +16,7 @@ spec:
         app: hossign
     spec:
       containers:
-      - image: fudgnl2/hossign:0.0.10
+      - image: fudgnl2/hossign:0.0.1102
         name: hossign
         ports:
         - containerPort: 3000
