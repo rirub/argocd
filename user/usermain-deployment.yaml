@@ -16,7 +16,7 @@ spec:
         app: usermain
     spec:
       containers:
-      - image: fudgnl2/usermain:0.0.5
+      - image: fudgnl2/usermainmain:0.0.1
         name: usermain
         ports:
         - containerPort: 3000

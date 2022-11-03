@@ -16,7 +16,7 @@ spec:
         app: userlog
     spec:
       containers:
-      - image: fudgnl2/userlog:0.0.7
+      - image: fudgnl2/userloglog:0.0.1
         name: userlog
         ports:
         - containerPort: 3000
